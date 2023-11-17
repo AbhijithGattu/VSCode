@@ -1,0 +1,28 @@
+{
+    "empData":[
+        {
+            "empId":"1",
+            "empName":"Abhi",
+            "empSalary":"1000",
+            "empGender":"M"
+        },
+        {
+            "empId":"2",
+            "empName":"Naga",
+            "empSalary":"2000",
+            "empGender":"F"
+        },
+        {
+            "empId":"3",
+            "empName":"Anji",
+            "empSalary":"3000",
+            "empGender":"M"
+        },
+        {
+            "empId":"4",
+            "empName":"Sowji",
+            "empSalary":"4000",
+            "empGender":"F"
+        }
+    ]
+}

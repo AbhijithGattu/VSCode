@@ -1,19 +1,61 @@
 <mvc:View controllerName="com.project1.controller.View1"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m"
-    xmlns:f="sap.ui.layout.form">
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:table="sap.ui.table">
     <Page id="page" title="{i18n>title}">
         <content>
-            <f:SimpleForm id="form">
-                <Label text="Emp ID"></Label>
-                <Input value="{/empStr/empID}"></Input>
-                <Label text="Emp Name"></Label>
-                <Input value="{/empStr/empName}"></Input>
-                <Label text="Emp Salary"></Label>
-                <Input id="salary" ></Input>
-                <Label text="Currency"></Label>
-                <Input id="curr"></Input>
-            </f:SimpleForm>
+            <!-- <l:HorizontalLayout class="sapUiContentPadding"> -->
+
+            <HBox alignItems="Stretch">
+                <VBox alignItems="Start" width="70%" class="sapUiContentPadding">
+                    <table:Table id ="idTable" rows = "{oEmpData>/empData}">
+                        <table:columns>
+                            <table:Column >
+                                <table:label>
+                                    <Label text="Id"></Label>
+                                </table:label>
+                                <table:template>
+                                    <Text text="{oEmpData>empId}"></Text>
+                                </table:template>
+                            </table:Column>
+                            <table:Column >
+                                <Label text="Name"></Label>
+                                <table:template>
+                                    <Text text="{oEmpData>empName}"></Text>
+                                </table:template>
+                            </table:Column>
+                            <table:Column >
+                                <Label text="Salary"></Label>
+                                <table:template>
+                                    <Text text="{oEmpData>empSalary}"></Text>
+                                </table:template>
+                            </table:Column>
+                            <table:Column >
+                                <Label text="Sex"></Label>
+                                <table:template>
+                                    <Text text="{oEmpData>empGender}"></Text>
+                                </table:template>
+                            </table:Column>
+                        </table:columns>
+                    </table:Table>
+                </VBox>
+                <VBox alignItems="Start" width="30%" class="sapUiContentPadding">
+                    <f:SimpleForm id="form">
+                        <Label text="Id"></Label>
+                        <Input id="idEmpId"></Input>
+                        <Label text="Name"></Label>
+                        <Input id="idEmpName"></Input>
+                        <Label text="Salary"></Label>
+                        <Input id="idEmpSalary"></Input>
+                        <Label text="Gender(M/F)"></Label>
+                        <Input id="idEmpGender"></Input>
+                        <Button text="Insert into table" type="Emphasized" press="onInsert"></Button>
+                    </f:SimpleForm>
+                </VBox>
+            </HBox>
+            <!-- </l:HorizontalLayout> -->
         </content>
     </Page>
 </mvc:View>

@@ -5,9 +5,9 @@ sap.ui.define(
     function(JSONModel) {
     'use strict';
     return{
-        createMymodel: function(){
+        createMymodel: function(sPath){
             var oModel = new JSONModel();
-            oModel.loadData("../model/data.json");
+            oModel.loadData(sPath,false);
             
             return oModel;
         }

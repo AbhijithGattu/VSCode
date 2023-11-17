@@ -31,10 +31,24 @@ sap.ui.define([
 
                 //type 3
                 //from utils file
-                var oModel = createModel.createMymodel();
+                var oModel = createModel.createMymodel("../model/data.json");
                 this.getView().setModel(oModel);
-                this.getView().byId("salary").bindValue("/empStr/empSalary");//syntax 1
-                this.getView().byId("curr").bindProperty("value", "/empStr/curr");//Syntax 2
+                console.log(oModel);
+                // this.getView().byId("salary").bindValue("/empStr/empSalary");//syntax 1
+                // this.getView().byId("curr").bindProperty("value", "/empStr/curr");//Syntax 2
+                //emp Data Model
+                var oEmpData = createModel.createMymodel("../model/empdata.json");
+                this.getView().setModel(oEmpData,"oEmpData");
+            },
+            onInsert : function(){
+                let oEntry = {};
+                oEntry.empId = this.getView().byId("idEmpId").getValue();
+                oEntry.empName = this.getView().byId("idEmpName").getValue();
+                oEntry.empSalary = this.getView().byId("idEmpSalary").getValue();
+                oEntry.empGender = this.getView().byId("idEmpGender").getValue();
+                sap.m.MessageToast.show("Employee Data is inserted");
+                this.getView().getModel("oEmpData").getProperty('/empData').push(oEntry);
+                this.getView().getModel("oEmpData").refresh();
             }
         });
     });
