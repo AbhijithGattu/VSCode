@@ -2,27 +2,39 @@
     "empData":[
         {
             "empId":"1",
-            "empName":"Abhi",
+            "empName":"Harry",
             "empSalary":"1000",
-            "empGender":"M"
+            "empGender":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPWSX8PnB7T8mP9I0569FHh4rRFhJGORtw&usqp=CAU",
+            "smoker":false,
+            "maritalStatus":"m",
+            "currency":"EUR"
         },
         {
             "empId":"2",
             "empName":"Naga",
             "empSalary":"2000",
-            "empGender":"F"
+            "empGender":"https://i.pinimg.com/1200x/2a/4e/8d/2a4e8dab6791ed643d5180bc72167f6d.jpg",
+            "smoker":true,
+            "maritalStatus":"m",
+            "currency":"EUR"
         },
         {
             "empId":"3",
-            "empName":"Anji",
+            "empName":"patan",
             "empSalary":"3000",
-            "empGender":"M"
+            "empGender":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPWSX8PnB7T8mP9I0569FHh4rRFhJGORtw&usqp=CAU",
+            "smoker":true,
+            "maritalStatus":"um",
+            "currency":"EUR"
         },
         {
             "empId":"4",
-            "empName":"Sowji",
+            "empName":"kane",
             "empSalary":"4000",
-            "empGender":"F"
+            "empGender":"https://i.pinimg.com/1200x/2a/4e/8d/2a4e8dab6791ed643d5180bc72167f6d.jpg",
+            "smoker":false,
+            "maritalStatus":"m",
+            "currency":"EUR"
         }
     ]
 }

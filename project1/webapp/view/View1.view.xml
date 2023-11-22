@@ -3,7 +3,8 @@
     xmlns="sap.m"
     xmlns:l="sap.ui.layout"
     xmlns:f="sap.ui.layout.form"
-    xmlns:table="sap.ui.table">
+    xmlns:table="sap.ui.table"
+    xmlns:core="sap.ui.core">
     <Page id="page" title="{i18n>title}">
         <content>
             <!-- <l:HorizontalLayout class="sapUiContentPadding"> -->
@@ -23,7 +24,7 @@
                             <table:Column >
                                 <Label text="Name"></Label>
                                 <table:template>
-                                    <Text text="{oEmpData>empName}"></Text>
+                                    <Input value="{oEmpData>empName}"></Input>
                                 </table:template>
                             </table:Column>
                             <table:Column >
@@ -35,7 +36,30 @@
                             <table:Column >
                                 <Label text="Sex"></Label>
                                 <table:template>
-                                    <Text text="{oEmpData>empGender}"></Text>
+                                    <Image src="{oEmpData>empGender}" height="25px" width="25px"></Image>
+                                </table:template>
+                            </table:Column>
+                            <table:Column >
+                                <Label text="Smoker"></Label>
+                                <table:template>
+                                    <CheckBox selected="{=${oEmpData>empName} === 'Abhijith' ? false : ${oEmpData>smoker}}"></CheckBox>
+                                </table:template>
+                            </table:Column>
+                            <table:Column >
+                                <Label text="Marital Status"></Label>
+                                <table:template>
+                                    <Select selectedKey="{oEmpData>maritalStatus}">
+                                        <items>
+                                            <core:Item key="m" text="Married"></core:Item>
+                                            <core:Item key="um" text="Single"></core:Item>
+                                        </items>
+                                    </Select>
+                                </table:template>
+                            </table:Column>
+                            <table:Column >
+                                <Label text="Currency"></Label>
+                                <table:template>
+                                    <Text text="{oEmpData>currency}"></Text>
                                 </table:template>
                             </table:Column>
                         </table:columns>
