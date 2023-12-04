@@ -33,7 +33,7 @@ sap.ui.define([
                 //from utils file
                 var oModel = createModel.createMymodel("../model/data.json");
                 this.getView().setModel(oModel);
-                console.log(oModel);
+                // console.log(oModel);
                 // this.getView().byId("salary").bindValue("/empStr/empSalary");//syntax 1
                 // this.getView().byId("curr").bindProperty("value", "/empStr/curr");//Syntax 2
                 //emp Data Model
@@ -49,6 +49,12 @@ sap.ui.define([
                 sap.m.MessageToast.show("Employee Data is inserted");
                 this.getView().getModel("oEmpData").getProperty('/empData').push(oEntry);
                 this.getView().getModel("oEmpData").refresh();
+            },
+            onRowSelection : function(oEvent){
+                this.getView().byId("idMaritalStatus").setVisible(true);
+                this.getView().byId('idTable2').bindElement(oEvent.getParameter('rowContext').getPath());
+                this.getView().byId('idTable2').setModel(this.getView().getModel("oEmpData"));
+                
             }
         });
     });

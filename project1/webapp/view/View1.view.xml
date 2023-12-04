@@ -11,7 +11,7 @@
 
             <HBox alignItems="Stretch">
                 <VBox alignItems="Start" width="70%" class="sapUiContentPadding">
-                    <table:Table id ="idTable" rows = "{oEmpData>/empData}">
+                    <table:Table id ="idTable" rows = "{oEmpData>/empData}" rowSelectionChange = "onRowSelection" selectionMode="Single">
                         <table:columns>
                             <table:Column >
                                 <table:label>
@@ -79,6 +79,58 @@
                     </f:SimpleForm>
                 </VBox>
             </HBox>
+            <Table id="idTable2" class="sapUiResponsiveMargin">
+                <columns>
+                    <Column>
+                        <header>
+                            <Text text="ID"/>
+                        </header>
+                    </Column>
+                    <Column>
+                        <header>
+                            <Text text="Name"/>
+                        </header>
+                    </Column>
+                    <Column>
+                        <header>
+                            <Text text="Salary"/>
+                        </header>
+                    </Column>
+                    <Column>
+                        <header>
+                            <Text text="Sex"/>
+                        </header>
+                    </Column>
+                    <Column>
+                        <header>
+                            <Text text="Marital Status"/>
+                        </header>
+                    </Column>
+                    <Column>
+                        <header>
+                            <Text text="Smoker"/>
+                        </header>
+                    </Column>
+                    <Column>
+                        <header>
+                            <Text text="Currency"/>
+                        </header>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem id="_IDGenColumnListItem2">
+                        <cells>
+                            <Text text="{empId}"/>
+                            <Text text="{empName}"/>
+                            <Text text="{empSalary}"/>
+                            <Image src="{empGender}" height="25px" width="25px"/>
+                            <Text id = "idMaritalStatus" text="{=${maritalStatus}==='m' ? 'Married' : 'Single'}" visible="false"/>
+                            <CheckBox selected="{smoker}" editable="false"/>
+                            <Text text="{currency}"/>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
             <!-- </l:HorizontalLayout> -->
         </content>
     </Page>
