@@ -1,0 +1,40 @@
+<mvc:View controllerName="com.project2.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="View1">
+        <headerContent>
+            <Button text="go to view 2" icon="sap-icon://navigation-right-arrow" type="Emphasized" press="goToView2"></Button>
+        </headerContent>
+        <content>
+            <SearchField width="50%"></SearchField>
+            <!-- <List id="idList">
+                <items>
+                    <DisplayListItem class="sapUiSmallMargin" label="Apple" value="An apple a day keeps doctor away"></DisplayListItem>
+                    <StandardListItem class="sapUiSmallMargin" title="Orange" description="Plupy" info="StandardListItem" icon="https://5.imimg.com/data5/SELLER/Default/2023/4/303374829/FQ/KI/LA/64531282/gettyimages-1205638014-2000-d0fbf9170f2d43eeb046f56eec65319c-1000x1000.jpg"></StandardListItem>
+                    <InputListItem class="sapUiSmallMargin" label="Which fruit Do you want?">
+                        <content>
+                            <Input placeholder="InputListItem"></Input>
+                        </content>
+                    </InputListItem>
+                    <CustomListItem class="sapUiSmallMargin">
+                        <Label text="CustomListItem"></Label>
+                        <Switch ></Switch>
+                    </CustomListItem>
+                    <ObjectListItem class="sapUiSmallMargin" info="Rich in potasium" title="Banana" number="100" numberUnit="Rs/Kg" icon="https://th-thumbnailer.cdn-si-edu.com/4Nq8HbTKgX6djk07DqHqRsRuFq0=/1000x750/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/d5/24/d5243019-e0fc-4b3c-8cdb-48e22f38bff2/istock-183380744.jpg">
+                        <attributes>
+                            <ObjectAttribute title="Method" text="Peel Off"></ObjectAttribute>
+                            <ObjectAttribute title="Fasak" text="Fasak"></ObjectAttribute>
+                        </attributes>
+                        <firstStatus>
+                            <ObjectStatus text="Available"></ObjectStatus>
+                        </firstStatus>
+                    </ObjectListItem>
+                </items>
+            </List> -->
+            <List items="{/fruits}">
+                <ObjectListItem title="{name}" number="{price}" numberUnit="Rs/Kg" icon="{image}">
+                    </ObjectListItem>
+            </List>
+        </content>
+    </Page>
+</mvc:View>
