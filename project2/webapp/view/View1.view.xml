@@ -5,8 +5,14 @@
         <headerContent>
             <Button text="go to view 2" icon="sap-icon://navigation-right-arrow" type="Emphasized" press="goToView2"></Button>
         </headerContent>
+        <OverflowToolbar class="sapUiSmallMarginBottom sapUiSmallMarginTop">
+            <SearchField search="onSearch" width="75%"></SearchField>
+            <ToolbarSpacer/>
+            <Button text="Additional Filters" press="handlePopoverPress"></Button>
+            <Button text="Clear Filters" press="onClearFilters"></Button>
+            <Button text="Additional Filters" press="handlePopoverPress"></Button>
+        </OverflowToolbar>
         <content>
-            <SearchField width="50%"></SearchField>
             <!-- <List id="idList">
                 <items>
                     <DisplayListItem class="sapUiSmallMargin" label="Apple" value="An apple a day keeps doctor away"></DisplayListItem>
@@ -31,10 +37,14 @@
                     </ObjectListItem>
                 </items>
             </List> -->
-            <List items="{/fruits}">
-                <ObjectListItem title="{name}" number="{price}" numberUnit="Rs/Kg" icon="{image}">
-                    </ObjectListItem>
+            <List items="{/fruits}" id="idFruitList" itemPress="onItemPress">
+                <ObjectListItem title="{name}" type="Navigation" number="{price}" numberUnit="Rs/Kg" intro="{vitamin}" icon="{image}">
+                </ObjectListItem>
             </List>
         </content>
+        <footer>
+            <Toolbar >
+            </Toolbar>
+        </footer>
     </Page>
 </mvc:View>

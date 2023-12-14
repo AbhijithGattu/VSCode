@@ -1,0 +1,7 @@
+<mvc:View controllerName="com.project2.controller.Empty"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="Please select an Item">
+        
+    </Page>
+</mvc:View>

@@ -1,0 +1,12 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Popover id="myPopover" title="Select one filter" class="sapUiResponsivePadding--header sapUiResponsivePadding--footer" placement="Auto">
+        <List id="idFilterList" itemPress="onFilterSelect">
+            <items>
+                <StandardListItem title="{i18n>condition1}" type="Active"></StandardListItem>
+                <StandardListItem title="{i18n>condition2}" type="Active"></StandardListItem>
+                <StandardListItem title="{i18n>condition3}" type="Active"></StandardListItem>
+            </items>
+        </List>
+    </Popover>
+</core:FragmentDefinition>

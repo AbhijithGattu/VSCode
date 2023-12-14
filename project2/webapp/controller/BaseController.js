@@ -9,7 +9,7 @@ sap.ui.define(
         onInit: function() {
         },
         getAppObject: function(){
-          return sap.ui.getCore().byId("idView1").getParent();
+          return sap.ui.getCore().byId("idView1").getParent().getParent();
         }
       });
     }
