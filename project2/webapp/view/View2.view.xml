@@ -8,24 +8,26 @@
             <IconTabBar >
                 <items>
                     <IconTabFilter key="moreInfo" text="More Info" icon="sap-icon://information">
-                        <content>  
-                            <core:Fragment fragmentName="com.project2.view.MoreInfo" type="XML" />
+                        <content>
+                            <core:Fragment fragmentName="com.project2.view.Fragments.MoreInfo" type="XML" />
                         </content>
                     </IconTabFilter>
                     <IconTabFilter key="suppData" text="Supplier Data" icon="sap-icon://supplier">
-                    <content>  
-                            <core:Fragment fragmentName="com.project2.view.Supplier" type="XML" />
-                        </content></IconTabFilter>
+                        <content>
+                            <core:Fragment fragmentName="com.project2.view.Fragments.Supplier" type="XML" />
+                        </content>
+                    </IconTabFilter>
                     <IconTabFilter key="selecctCity" text="City" icon="sap-icon://home">
-                    <content>  
-                            <core:Fragment fragmentName="com.project2.view.SelectCity" type="XML" />
-                        </content></IconTabFilter>
+                        <content>
+                            <core:Fragment fragmentName="com.project2.view.Fragments.SelectCity" type="XML" />
+                        </content>
+                    </IconTabFilter>
                 </items>
             </IconTabBar>
         </content>
         <footer>
             <OverflowToolbar >
-            <ToolbarSpacer ></ToolbarSpacer>
+                <ToolbarSpacer ></ToolbarSpacer>
                 <Button text="Approve" type="Accept"></Button>
                 <Button text="Reject" type="Reject"></Button>
             </OverflowToolbar>

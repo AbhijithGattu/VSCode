@@ -1,0 +1,10 @@
+<mvc:View controllerName="com.project2.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Page id="page3" title="View 3" showNavButton="true" navButtonPress="goToView2">
+        <content >
+            <!-- <ObjectHeader title="{country}" intro="Geo-Id : {geonameid}, Name : {name}, Sub-Country : {subcountry}"></ObjectHeader> -->
+            <ObjectHeader title="{country}" intro="{geonameid}" numberUnit="{name}" number="{subcountry}"></ObjectHeader>
+            </content >
+    </Page>
+</mvc:View>

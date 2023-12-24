@@ -1,0 +1,26 @@
+<core:FragmentDefinition xmlns:odata="sap.ui.comp.odata"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:form="sap.ui.layout.form">
+    <form:SimpleForm editable="true">
+    <Label text="Select Control"></Label>
+    <Select items="{/countries}">
+        <items>
+            <core:Item key="{name}" text="{name}"></core:Item>
+        </items>
+    </Select>
+    <Label text="ComboBox Control"></Label>
+    <ComboBox items="{/countries}">
+        <items>
+            <core:Item key="{name}" text="{name}"></core:Item>
+        </items>
+    </ComboBox>
+    <Label text="MultiComboBox Control"></Label>
+    <MultiComboBox items="{/countries}">
+        <items>
+            <core:Item key="{name}" text="{name}"></core:Item>
+        </items>
+    </MultiComboBox>
+    <DatePicker ></DatePicker>
+    </form:SimpleForm>
+</core:FragmentDefinition>

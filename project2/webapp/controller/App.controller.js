@@ -32,9 +32,15 @@ sap.ui.define(
             viewName : "com.project2.view.Empty",
             type : sap.ui.core.mvc.ViewType.XML
           });
+          var oView3 = new sap.ui.view({
+            id:"idView3",
+            viewName : "com.project2.view.View3",
+            type : sap.ui.core.mvc.ViewType.XML
+          });
           oApp.addMasterPage(oView1);
           oApp.addDetailPage(oEmpty);
           oApp.addDetailPage(oView2);
+          oApp.addDetailPage(oView3);
           
           oApp.setInitialDetail("idEmpty");
         }
