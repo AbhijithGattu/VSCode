@@ -8,7 +8,7 @@ sap.ui.define([
 
         return Controller.extend("com.project2.controller.View1", {
             onInit: function () {
-
+                this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
             },
             goToView2: function () {
                 var oApp = this.getAppObject();
@@ -77,9 +77,13 @@ sap.ui.define([
             },
             onItemPress: function(oEvent){
                 var sPath = oEvent.getParameter("listItem").getBindingContextPath();
-                var oView2 = this.getAppObject().getDetailPages()[1];
-                oView2.bindElement(sPath);
-                this.getAppObject().to("idView2")
+                // var oView2 = this.getAppObject().getDetailPages()[1];
+                // oView2.bindElement(sPath);
+                // this.getAppObject().to("idView2")
+                var fruitId = sPath.split('/')[sPath.split('/').length-1];
+                this.oRouter.navTo("fruit",{
+                    fruitId:fruitId
+                });
                 // this.goToView2();
             }
         });

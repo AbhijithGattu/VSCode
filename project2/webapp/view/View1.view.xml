@@ -37,8 +37,8 @@
                     </ObjectListItem>
                 </items>
             </List> -->
-            <List items="{/fruits}" id="idFruitList" itemPress="onItemPress">
-                <ObjectListItem title="{name}" type="Navigation" number="{price}" numberUnit="Rs/Kg" intro="{vitamin}" icon="{image}">
+            <List items="{/fruits}" id="idFruitList" itemPress="onItemPress" mode="SingleSelectMaster">
+                <ObjectListItem title="{name}" type="Active" number="{price}" numberUnit="Rs/Kg" intro="{vitamin}" icon="{image}">
                 </ObjectListItem>
             </List>
         </content>

@@ -32,7 +32,9 @@
       "tablet": true,
       "phone": true
     },
-    "supportedThemes": ["sap_bluecrystal"]
+    "supportedThemes": [
+      "sap_bluecrystal"
+    ]
   },
   "sap.ui5": {
     "flexEnabled": true,
@@ -59,6 +61,10 @@
         "settings": {
           "bundleName": "com.project2.i18n.i18n"
         }
+      },
+      "": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/data.json"
       }
     },
     "resources": {
@@ -80,10 +86,27 @@
       },
       "routes": [
         {
-          "name": "RouteView1",
-          "pattern": ":?query:",
+          "name": "Master",
+          "pattern": "",
           "target": [
-            "TargetView1"
+            "TargetView1",
+            "EmptyView"
+          ]
+        },
+        {
+          "name": "fruit",
+          "pattern": "fruit/{fruitId}",
+          "target": [
+            "TargetView1",
+            "TargetView2"
+          ]
+        },
+        {
+          "name": "Supplier",
+          "pattern": "fruit/:fruitId:/Supplier/{supplierId}",
+          "target": [
+            "TargetView1",
+            "View3"
           ]
         }
       ],
@@ -91,9 +114,34 @@
         "TargetView1": {
           "viewType": "XML",
           "transition": "slide",
-          "clearControlAggregation": false,
-          "viewId": "View1",
-          "viewName": "View1"
+          "controlAggregation": "masterPages",
+          "viewId": "idView1",
+          "viewName": "View1",
+          "viewLevel": 1
+        },
+        "TargetView2": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "detailPages",
+          "viewId": "idView2",
+          "viewName": "View2",
+          "viewLevel": 2
+        },
+        "EmptyView": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "detailPages",
+          "viewId": "idEmpty",
+          "viewName": "Empty",
+          "viewLevel": 1
+        },
+        "View3": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "detailPages",
+          "viewId": "idView3",
+          "viewName": "View3",
+          "viewLevel": 3
         }
       }
     },
