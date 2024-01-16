@@ -1,0 +1,46 @@
+<mvc:View xmlns:table="sap.ui.table" controllerName="masterdetail.controller.Detail_1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="Order Details" navButtonPress="onNavButtonPress" showNavButton="true">
+        <content >
+            <Table id="orderDetailsTable" items="{orderDetailsModel>/}" mode="SingleSelectMaster" selectionChange="onOrderDetailSelect">
+                <columns>
+                    <Column>
+                        <Label text="Order ID"/>
+                    </Column>
+                    <Column>
+                        <Label text="Product ID"/>
+                    </Column>
+                    <Column>
+                        <Label text="Unit Price"/>
+                    </Column>
+                    <Column>
+                        <Label text="Quantity"/>
+                    </Column>
+                    <Column>
+                        <Label text="Discount"/>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem type="Navigation">
+                        <cells>
+                            <Text text="{orderDetailsModel>OrderID}"></Text>
+                        </cells>
+                        <cells>
+                            <Text text="{orderDetailsModel>ProductID}"></Text>
+                        </cells>
+                        <cells>
+                            <Text text="{orderDetailsModel>UnitPrice}"></Text>
+                        </cells>
+                        <cells>
+                            <Text text="{orderDetailsModel>Quantity}"></Text>
+                        </cells>
+                        <cells>
+                            <Text text="{orderDetailsModel>Discount}"></Text>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

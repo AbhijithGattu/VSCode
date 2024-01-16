@@ -1,0 +1,15 @@
+<mvc:View controllerName="masterdetail.controller.Empty"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="Empty">
+        <customHeader >
+            <OverflowToolbar>
+                <content>
+                    <ToolbarSpacer/>
+                    <Title text="Please select any Product"></Title>
+                    <ToolbarSpacer/>
+                </content>
+            </OverflowToolbar>
+        </customHeader>
+    </Page>
+</mvc:View>

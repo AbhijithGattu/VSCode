@@ -1,0 +1,13 @@
+<mvc:View controllerName="masterdetail.controller.Master"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="Order Id">    
+        <content >
+            <List items="{/Orders}" mode="SingleSelectMaster" itemPress="onMasterItemSelect">
+                <items>
+                    <ObjectListItem type="Navigation" title="{OrderID}"></ObjectListItem>
+                </items>
+            </List>
+        </content>
+    </Page>
+</mvc:View>

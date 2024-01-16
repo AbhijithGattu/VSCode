@@ -1,0 +1,25 @@
+<mvc:View xmlns:table="sap.ui.table" controllerName="masterdetail.controller.Detail_2"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="page" title="Product Details" navButtonPress="onNavButtonPress" showNavButton="true">
+        <content >
+                <f:SimpleForm id="form" backgroundDesign="Transparent">
+                    <Label text="Product ID"></Label>
+                    <Text text="{/ProductID}"></Text>
+                    <Label text="Product Name"></Label>
+                    <Text text="{/ProductName}"></Text>
+                    <Label text="Supplier ID"></Label>
+                    <Text text="{/SupplierID}"></Text>
+                    <Label text="Category ID"></Label>
+                    <Text text="{/CategoryID}"></Text>
+                    <Label text="Quantity Per Unit"></Label>
+                    <Text text="{/QuantityPerUnit}"></Text>
+                    <Label text="Unit Price"></Label>
+                    <Text text="{/UnitPrice}"></Text>
+                    <Label text="Units In Stock"></Label>
+                    <Text text="{/UnitsInStock}"></Text>
+                </f:SimpleForm>
+        </content>
+    </Page>
+</mvc:View>
