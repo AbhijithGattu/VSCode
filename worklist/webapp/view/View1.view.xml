@@ -1,0 +1,30 @@
+<mvc:View controllerName="worklist.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.f">
+
+    <f:DynamicPage backgroundDesign="Transparent">
+        <f:title>
+            <f:DynamicPageTitle >
+                <f:heading>
+                    <Text text="Worklist"></Text>
+                </f:heading>
+                <f:snappedContent>
+                    <Text text="snappedContent"></Text>
+                </f:snappedContent>
+            </f:DynamicPageTitle>
+        </f:title>
+        <f:header>
+            <f:DynamicPageHeader >
+                <f:content>
+                    <Text text="hi"></Text>
+                </f:content>
+            </f:DynamicPageHeader>
+        </f:header>
+        <f:content>
+        <List >
+        <ObjectListItem title="{/products}"></ObjectListItem>
+        </List>
+        </f:content>
+    </f:DynamicPage>
+</mvc:View>
