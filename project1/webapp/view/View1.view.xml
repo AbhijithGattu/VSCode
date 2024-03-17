@@ -68,13 +68,13 @@
                 <VBox alignItems="Start" width="30%" class="sapUiContentPadding">
                     <f:SimpleForm id="form">
                         <Label text="Id"></Label>
-                        <Input id="idEmpId"></Input>
+                        <Input id="idEmpId" required="true"></Input>
                         <Label text="Name"></Label>
-                        <Input id="idEmpName"></Input>
+                        <Input id="idEmpName" required="true"></Input>
                         <Label text="Salary"></Label>
-                        <Input id="idEmpSalary"></Input>
+                        <Input id="idEmpSalary" required="true"></Input>
                         <Label text="Gender(M/F)"></Label>
-                        <Input id="idEmpGender"></Input>
+                        <Input id="idEmpGender" required="true"></Input>
                         <Button text="Insert into table" type="Emphasized" press="onInsert"></Button>
                     </f:SimpleForm>
                 </VBox>

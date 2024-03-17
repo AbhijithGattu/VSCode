@@ -1,0 +1,42 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:table="sap.ui.table" controllerName="practice1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="Products">
+        <content>
+            <Table items="{path:'/Products',
+					sorter: {path: 'ProductID'},
+                    parameters: { 'expand' : 'Supplier,Category' }
+                    }">
+                <columns>
+                    <Column >
+                        <Label text="ID"></Label>
+                    </Column>
+                    <Column >
+                        <Label text="Product Name"></Label>
+                    </Column>
+                    <Column >
+                        <Label text="Quantity Per Unit"></Label>
+                    </Column>
+                    <Column >
+                        <Label text="Unit Price"></Label>
+                    </Column>
+                    <Column >
+                        <Label text="More info"></Label>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem >
+                        <cells>
+                            <StandardListItem title="{ProductID}"></StandardListItem>
+                            <StandardListItem title="{ProductName}"></StandardListItem>
+                            <StandardListItem title="{QuantityPerUnit}"></StandardListItem>
+                            <StandardListItem title="{UnitPrice}"></StandardListItem>
+                            <core:Icon src="sap-icon://message-popup" press="onMoreInfoPress"></core:Icon>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+
+        </content>
+    </Page>
+</mvc:View>

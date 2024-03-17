@@ -1,0 +1,61 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.ui.layout.form">
+    <Popover title="More Info" id = "idMoreInfo" placement="Auto" resizable="true">
+        <content>
+            <f:SimpleForm id="idSupplierForm" 
+            editable="false"
+            visible="{path:'UnitPrice',formatter: '.visibleStatus'}"
+            layout="ResponsiveGridLayout"
+			columnsXL="2"
+			columnsL="2"
+			columnsM="2"
+            labelSpanXL="4"
+			labelSpanL="4"
+			labelSpanM="5"
+			labelSpanS="5"
+			adjustLabelSpan="false"
+            singleContainerFullSize="false" 
+            >
+                
+                <core:Title text="Supplier Details"></core:Title>
+                <Label text="CompanyName"></Label>
+                <Text text="{Supplier/CompanyName}"></Text>
+                <Label text="ContactName"></Label>
+                <Text text="{Supplier/ContactName}"></Text>
+                <Label text="ContactTitle"></Label>
+                <Text text="{Supplier/ContactTitle}"></Text>
+                <Label text="Address"></Label>
+                <Text text="{parts: ['Supplier/Address','Supplier/City','Supplier/Country','Supplier/Phone','Supplier/PostalCode'],formatter: '.formatAddress'}"></Text>
+                <core:Title text="Category Details"></core:Title>
+                <Label text="CategoryID"></Label>
+                <Text text="{Category/CategoryID}"></Text>
+                <Label text="CategoryName"></Label>
+                <Text text="{Category/CategoryName}"></Text>
+                <Label text="Description"></Label>
+                <Text text="{Category/Description}"></Text>
+            </f:SimpleForm>
+            <f:SimpleForm id="idCategoryForm" 
+            editable="false" 
+            visible="{path:'UnitPrice',formatter: '.visibleStatus1'}"
+            layout="ResponsiveGridLayout"
+			columnsL="1"
+			columnsM="1"
+            labelSpanXL="4"
+			labelSpanL="4"
+			labelSpanM="7"
+			labelSpanS="7"
+			adjustLabelSpan="false"
+            singleContainerFullSize="false" 
+            >
+                <Title text="Category Details"></Title>
+                <Label text="CategoryID"></Label>
+                <Text text="{Category/CategoryID}"></Text>
+                <Label text="CategoryName"></Label>
+                <Text text="{Category/CategoryName}"></Text>
+                <Label text="Description"></Label>
+                <Text text="{Category/Description}"></Text>
+            </f:SimpleForm>
+        </content>
+    </Popover>
+</core:FragmentDefinition>
