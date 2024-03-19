@@ -1,42 +1,72 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:table="sap.ui.table" controllerName="practice1.controller.View1"
+<mvc:View xmlns:core="sap.ui.core"
+    xmlns:table="sap.ui.table" controllerName="practice1.controller.View1"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
+    xmlns="sap.m"
+    xmlns:chart="sap.suite.ui.commons"
+    xmlns:viz="sap.viz.ui5.controls"
+    xmlns:vizData="sap.viz.ui5.data"
+    xmlns:vizFeeds="sap.viz.ui5.controls.common.feeds">
     <Page id="page" title="Products">
         <content>
-            <Table items="{path:'/Products',
-					sorter: {path: 'ProductID'},
-                    parameters: { 'expand' : 'Supplier,Category' }
-                    }">
-                <columns>
-                    <Column >
-                        <Label text="ID"></Label>
-                    </Column>
-                    <Column >
-                        <Label text="Product Name"></Label>
-                    </Column>
-                    <Column >
-                        <Label text="Quantity Per Unit"></Label>
-                    </Column>
-                    <Column >
-                        <Label text="Unit Price"></Label>
-                    </Column>
-                    <Column >
-                        <Label text="More info"></Label>
-                    </Column>
-                </columns>
-                <items>
-                    <ColumnListItem >
-                        <cells>
-                            <StandardListItem title="{ProductID}"></StandardListItem>
-                            <StandardListItem title="{ProductName}"></StandardListItem>
-                            <StandardListItem title="{QuantityPerUnit}"></StandardListItem>
-                            <StandardListItem title="{UnitPrice}"></StandardListItem>
-                            <core:Icon src="sap-icon://message-popup" press="onMoreInfoPress"></core:Icon>
-                        </cells>
-                    </ColumnListItem>
-                </items>
-            </Table>
-
+            <chart:ChartContainer title="chart container">
+                <chart:ChartContainerContent icon="sap-icon://vertical-bullet-chart" title="product graph">
+                    <chart:content>
+                        <viz:VizFrame id="idVizFrame" vizType="stacked_bar" uiConfig="{applicationSet:'fiori'}" vizProperties="{plotArea: { drawingEffect: 'glossy'}, title:{ text:'Data analysis through Reports'},dataLabel:{visible:true,showTotal:true}}">
+                            <viz:dataset>
+                                <vizData:FlattenedDataset data="{/Products}">
+                                    <vizData:dimensions>
+                                        <vizData:DimensionDefinition name="Product Name" value="{ProductName}"/>
+                                    </vizData:dimensions>
+                                    <vizData:measures>
+                                        <vizData:MeasureDefinition name="Units In Stock" value="{UnitsInStock}"/>
+                                    </vizData:measures>
+                                </vizData:FlattenedDataset>
+                            </viz:dataset>
+                            <viz:feeds>
+                                <vizFeeds:FeedItem type="Measure" uid="valueAxis" values="Units In Stock"/>
+                                <vizFeeds:FeedItem type="Dimension" uid="categoryAxis" values="Product Name"/>
+                            </viz:feeds>
+                        </viz:VizFrame>
+                    </chart:content>
+                </chart:ChartContainerContent>
+                <chart:ChartContainerContent icon="sap-icon://table-chart" title="Products table">
+                    <chart:content>
+                        <Table items="{path:'/Products',
+                            sorter: {path: 'ProductID'},
+                            parameters: { 'expand' : 'Supplier,Category' }
+                            }">
+                            <columns>
+                                <Column >
+                                    <Label text="ID"></Label>
+                                </Column>
+                                <Column >
+                                    <Label text="Product Name"></Label>
+                                </Column>
+                                <Column >
+                                    <Label text="Quantity Per Unit"></Label>
+                                </Column>
+                                <Column >
+                                    <Label text="Unit Price"></Label>
+                                </Column>
+                                <Column >
+                                    <Label text="More info"></Label>
+                                </Column>
+                            </columns>
+                            <items>
+                                <ColumnListItem >
+                                    <cells>
+                                        <StandardListItem title="{ProductID}"></StandardListItem>
+                                        <StandardListItem title="{ProductName}"></StandardListItem>
+                                        <StandardListItem title="{QuantityPerUnit}"></StandardListItem>
+                                        <StandardListItem title="{UnitPrice}"></StandardListItem>
+                                        <core:Icon src="sap-icon://message-popup" press="onMoreInfoPress"></core:Icon>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                        </Table>
+                    </chart:content>
+                </chart:ChartContainerContent>
+            </chart:ChartContainer>
         </content>
     </Page>
 </mvc:View>
