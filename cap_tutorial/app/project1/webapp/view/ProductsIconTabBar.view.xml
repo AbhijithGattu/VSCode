@@ -1,0 +1,100 @@
+<mvc:View xmlns:table="sap.ui.table" controllerName="com.sap.project1.controller.ProductsIconTabBar"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:semantic="sap.f.semantic"
+	core:require="{Formatter: 'com/sap/project1/model/formatter'}">
+	<semantic:SemanticPage id="page" headerPinnable="false" toggleHeaderOnTitleClick="false">
+		<semantic:titleHeading>
+			<Title text="Welcome to Products Section"></Title>
+		</semantic:titleHeading>
+        <semantic:titleBreadcrumbs>
+			<Breadcrumbs>
+				<Link text="Home" press=".onNavToHome"/>
+				<Link text="Products" />
+			</Breadcrumbs>
+		</semantic:titleBreadcrumbs>
+		<semantic:headerContent>
+			<IconTabBar expandable="false" select=".onIconTabBarSelect">
+				<items>
+					<IconTabFilter key="all" showAll="true" count="{worklistView>/countAll}" text="{i18n>WorklistFilterProductsAll}"/>
+					<IconTabSeparator/>
+					<IconTabFilter key="inStock" icon="sap-icon://message-success" iconColor="Positive" count="{worklistView>/inStock}" text="{i18n>WorklistFilterInStock}"/>
+					<IconTabFilter key="shortage" icon="sap-icon://message-warning" iconColor="Critical" count="{worklistView>/shortage}" text="{i18n>WorklistFilterShortage}"/>
+					<IconTabFilter key="outOfStock" icon="sap-icon://message-error" iconColor="Negative" count="{worklistView>/outOfStock}" text="{i18n>WorklistFilterOutOfStock}"/>
+				</items>
+				<content>
+					<Table id="productsTable" items="{
+							path: '/Product',
+							sorter: {
+								path: 'ProductID',
+								descending: false
+							},
+							parameters: {
+								'expand': 'OrderedByinfo'
+							}
+						}" 
+						updateFinished=".onProductTableUpdate"
+						>
+						<headerToolbar>
+							<Toolbar >
+								<Title id="tableHeader"/>
+								<ToolbarSpacer/>
+								<SearchField id="searchField" placeholder="Search Product name here ..." search=".onSearch" liveChange="onSearch" width="50%">
+								</SearchField>
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column>
+								<Text id="ProductID" text="{i18n>ProductID}"/>
+							</Column>
+							<Column id="ProductName">
+								<Text text="{i18n>ProductName}"/>
+							</Column>
+							<Column id="QuantityPerUnit">
+								<Text text="{i18n>QuantityPerUnit}"/>
+							</Column>
+							<Column id="UnitPrice" hAlign="End">
+								<Text text="{i18n>UnitPrice}"/>
+							</Column>
+							<Column id="UnitsInStock" hAlign="End">
+								<Text text="{i18n>UnitsInStock}"/>
+							</Column>
+							<Column id="UnitsOnOrder" hAlign="End">
+								<Text text="{i18n>UnitsOnOrder}"/>
+							</Column>
+							<Column id="ReorderLevel" hAlign="End">
+								<Text text="{i18n>ReorderLevel}"/>
+							</Column>
+							<Column id="Discontinued" hAlign="End">
+								<Text text="{i18n>Available}"/>
+							</Column>
+							<!-- <Column id="SupplierID" hAlign="End">
+								<Text text="{i18n>SupplierID}"/>
+							</Column>
+							<Column id="CategoryID" hAlign="End">
+								<Text text="{i18n>CategoryID}"/>
+							</Column> -->
+						</columns>
+						<items>
+							<ColumnListItem  press=".onPress" highlight="{=${Discontinued} > 0 ? 'Error' : 'None' }">
+								<cells>
+									<Text text = "{ProductID}"/>
+									<ObjectIdentifier title="{ProductName}"/>
+									<Text text="{QuantityPerUnit}"/>
+									<ObjectNumber unit="EUR" number="{UnitPrice}"/>
+									<ObjectStatus text="{UnitsInStock}" state="{
+										path: 'UnitsInStock',
+										formatter: 'Formatter.quantityState'}"/>
+									<ObjectNumber number="{UnitsOnOrder}"/>
+									<ObjectNumber number="{ReorderLevel}"/>
+									<core:Icon src="{=${Discontinued} > 0 ? 'sap-icon://decline' : 'sap-icon://accept' }" color="{=${Discontinued} > 0 ? 'red' : 'green' }" tooltip="{=${Discontinued} > 0 ? 'Discontinued' : 'Available' }"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</IconTabBar>
+		</semantic:headerContent>
+	</semantic:SemanticPage>
+</mvc:View>
