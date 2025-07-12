@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","sap/ui/model/Filter","sap/ui/model/FilterOperator"],function(e,r,o){"use strict";return e.extend("com.sap.project1.controller.ProductsWorklist",{})});
+//# sourceMappingURL=ProductsWorklist.controller.js.map

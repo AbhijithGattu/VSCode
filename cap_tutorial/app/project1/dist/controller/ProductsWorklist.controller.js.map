@@ -1,0 +1,1 @@
+{"version":3,"file":"ProductsWorklist.controller.js","names":["sap","ui","define","Controller","Filter","FilterOperator","extend"],"sources":["ProductsWorklist-dbg.controller.js"],"mappings":"AAAAA,IAAIC,GAAGC,OAAO,CACb,6BACA,sBACA,+BACE,SAAUC,EAAYC,EAAQC,GAChC,aAEA,OAAOF,EAAWG,OAAO,+CAAgD,CACtE,EACJ","ignoreList":[]}

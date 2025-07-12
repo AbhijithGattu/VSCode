@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","sap/ui/core/UIComponent"],function(o,t){"use strict";return o.extend("com.sap.project1.controller.Home",{onInit:function(){this.oRouter=t.getRouterFor(this)},onGoToProductsWorklist:function(){this.oRouter.navTo("ProductsWorklist")},onGoToProductsIconTabbar:function(){this.oRouter.navTo("ProductsIconTabbar")}})});
+//# sourceMappingURL=Home.controller.js.map

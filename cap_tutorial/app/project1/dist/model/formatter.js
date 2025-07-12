@@ -1,0 +1,2 @@
+sap.ui.define([],function(){"use strict";return{quantityState:function(e){let r="None";e=parseInt(e);switch(true){case e<30:r="Warning";break;case e>30:r="Success";break;case e=0:r="Error";break;default:break}return r}}});
+//# sourceMappingURL=formatter.js.map

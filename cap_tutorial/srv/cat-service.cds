@@ -6,4 +6,5 @@ service CatalogService@(path:'/CatalogService')
     entity Customer as projection on db.Customers;
     entity Order as projection on db.Orders;
     entity Product as projection on db.Products;
+    entity Trail as projection on db.Trail;
     }

@@ -1,5 +1,6 @@
 namespace cap_tutorial;
-
+using { cuid , managed , Country} from '@sap/cds/common';
+using from '@sap/cds-common-content';
 
 entity SalesOrders {
       @title: 'Sales Order Number'
@@ -71,4 +72,9 @@ entity Products {
       OrderedBy       : Integer;
       OrderedByinfo   : Association to many Orders on OrderedByinfo.OrderedBy = $self.OrderedBy;
 
+}
+
+entity Trail: cuid, managed{
+  trail : Integer;
+  country :  Country;
 }
