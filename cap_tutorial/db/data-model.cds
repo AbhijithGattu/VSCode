@@ -1,5 +1,5 @@
 namespace cap_tutorial;
-using { cuid , managed , Country} from '@sap/cds/common';
+using { sap, cuid , managed , Country} from '@sap/cds/common';
 using from '@sap/cds-common-content';
 
 entity SalesOrders {
@@ -10,7 +10,7 @@ entity SalesOrders {
       orderDate       : Date;
 
       @title: 'Customer Name'
-      customerName    : String;
+      customerName    : Association to one Customers;
 
       @title: 'Customer Number'
       customerNumber  : String;
@@ -23,10 +23,12 @@ entity SalesOrders {
 
       @title: 'Total Sales Order'
       totalOrderItems : Integer;
+      Orders          : Association to many Orders on Orders.salesorderID=$self.soNumber;
 }
 
 entity Customers {
-  key CustomerID  : String;
+  @UI.Hidden
+  key CustomerID  : String; 
       CompanyName : String;
       ContactName : String;
       ContactTitle : String;
@@ -34,10 +36,11 @@ entity Customers {
       City        : String;
       Region      : String;
       PostalCode  : Integer;
-      Country     : String;
+      Countries   : Association to sap.common.Countries;
       Phone       : String;
       Fax         : String;
-      orderInfo   : Association to one Orders on orderInfo.CustomerID = $self.CustomerID
+      orderInfo   : Association to one Orders on orderInfo.CustomerID = $self.CustomerID;
+      SORTORDER   : Integer;
 }
 
 entity Orders {
@@ -56,6 +59,7 @@ entity Orders {
       ShipCountry    : String;
       CustomerInfo   : Association to one Customers on CustomerInfo.CustomerID = $self.CustomerID;
       OrderedBy      : Integer;
+      salesorderID   : Decimal(25, 10);
 }
 
 entity Products {

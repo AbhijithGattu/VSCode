@@ -9,6 +9,7 @@
     "@sap/cds": "^8",
     "@sap/cds-common-content": "^3.0.1",
     "@sap/hana-client": "^2.25.22",
+    "@sap/ux-cds-odata-language-server-extension": "^1.18.3",
     "express": "^4"
   },
   "devDependencies": {
@@ -16,9 +17,12 @@
     "@cap-js/sqlite": "^1",
     "@sap/cds-dk": "^8",
     "mbt": "^1.2.29",
+    "nodemon": "^3.1.10",
     "rimraf": "^5.0.5"
   },
   "scripts": {
+    "watch": "nodemon --watch srv --watch db --ext cds,csn,json,yaml --exec \"npm run build-and-deploy\"",
+    "build-and-deploy": "cds build && cds deploy",
     "start": "cds-serve",
     "watch-project1": "cds watch --open project1/webapp/index.html?sap-ui-xx-viewCache=false",
     "watch-fiorielements": "cds watch --open fiorielements/webapp/index.html?sap-ui-xx-viewCache=false",

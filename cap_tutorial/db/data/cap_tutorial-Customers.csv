@@ -1,67 +1,67 @@
-CustomerID,CompanyName,ContactName,ContactTitle,Address,City,Region,PostalCode,Country,Phone,Fax
-ALFKI,Alfreds Futterkiste,Maria Anders,Sales Representative,Obere Str. 57,Berlin,NULL,12209,Germany,030-0074321,030-0076545
-ANATR,Ana Trujillo Emparedados y helados,Ana Trujillo,Owner,Avda. de la Constitución 2222,México D.F.,NULL,05021,Mexico,(5) 555-4729,(5) 555-3745
-ANTON,Antonio Moreno Taquería,Antonio Moreno,Owner,Mataderos 2312,México D.F.,NULL,05023,Mexico,(5) 555-3932,NULL
-AROUT,Around the Horn,Thomas Hardy,Sales Representative,120 Hanover Sq.,London,NULL,WA1 1DP,UK,(020) 7555-7788,(020) 7555-6750
-BERGS,Berglunds snabbköp,Christina Berglund,Order Administrator,Berguvsvägen 8,Luleå,NULL,S-958 22,Sweden,0921-12 34 65,0921-12 34 67
-BLONP,Blondel père et fils,Frédérique Citeaux,Marketing Manager,24, place Kléber,Strasbourg,NULL,67000,France,88.60.15.31,88.60.15.32
-BOLID,Bólido Comidas preparadas,Martín Sommer,Owner,C/ Araquil, 67,Madrid,NULL,28023,Spain,(91) 555 22 82,(91) 555 91 99
-BONAP,Bon app',Laurence Lebihan,Owner,12, rue des Bouchers,Marseille,NULL,13008,France,91.24.45.40,91.24.45.41
-BOTTM,Bottom-Dollar Markets,Elizabeth Lincoln,Accounting Manager,23 Tsawassen Blvd.,Tsawassen,BC,T2F 8A4,Canada,(604) 555-4729,(604) 555-3745
-BSBEV,B's Beverages,Victoria Ashworth,Sales Representative,Fauntleroy Circus,London,NULL,EC2 5NT,UK,(020) 7555-1212,NULL
-CACTU,Cactus Comidas para llevar,Patricio Simpson,Sales Agent,Cerrito 333,Buenos Aires,NULL,1010,Argentina,(1) 135-5555,(1) 135-4892
-CENTC,Centro comercial Moctezuma,Francisco Chang,Marketing Manager,Sierras de Granada 9993,México D.F.,NULL,05022,Mexico,(5) 555-3392,(5) 555-7293
-CHOPS,Chop-suey Chinese,Yang Wang,Owner,Hauptstr. 29,Bern,NULL,3012,Switzerland,0452-076545,NULL
-COMMI,Comércio Mineiro,Pedro Afonso,Sales Associate,Av. dos Lusíadas, 23,São Paulo,SP,05432-043,Brazil,(11) 555-7647,NULL
-CONSH,Consolidated Holdings,Elizabeth Brown,Sales Representative,Berkeley Gardens 12 Brewery,London,NULL,WX1 6LT,UK,(020) 7555-2282,NULL
-DRACD,Drachenblut Delikatessen,Sven Ottlieb,Order Administrator,Walserweg 21,Aachen,NULL,52066,Germany,0241-039123,0241-039122
-DUMON,Du monde entier,Janine Labrune,Owner,67, rue des Cinquante Otages,Nantes,NULL,44000,France,40.67.88.88,40.67.89.89
-EASTC,Eastern Connection,Ann Devon,Sales Agent,35 King St.,London,NULL,EC2 4LQ,UK,(020) 7555-0297,(020) 7555-9129
-ERNSH,Ernst Handel,Roland Mendel,Sales Manager,Kirchgasse 6,Graz,NULL,8010,Austria,7675-3425,7675-3426
-FAMIA,Familia Arquibaldo,Aria Cruz,Marketing Assistant,Rua Orós, 92,São Paulo,SP,05442-030,Brazil,(11) 555-9857,NULL
-FISSA,Fissa Fabrikationen AG,Diego Roel,Marketing Manager,Kappelergasse 16,Bern,NULL,3011,Switzerland,061-995-0275,061-995-0275
-FOLIG,Folies gourmandes,Martine Rancé,Assistant Sales Agent,184, chaussée de Tournai,Lille,NULL,59000,France,20.16.10.16,20.16.10.17
-FOLKO,Folk och fä,Maria Larsson,Owner,Åkergatan 24,Bräcke,NULL,S-844 67,Sweden,0695-346721,NULL
-FRANK,Frankenversand,Peter Franken,Marketing Manager,Berliner Platz 43,München,NULL,80805,Germany,089-877510,089-877451
-FRANR,France restauration,Carine Schmitt,Marketing Manager,54, rue Royale,Nantes,NULL,44000,France,40.32.21.21,40.32.21.22
-FRANS,Franchi S.p.A.,Paolo Accorti,Sales Representative,Via Monte Bianco 34,Torino,NULL,10100,Italy,011-4988260,011-4988261
-FURIB,Furia Bacalhau e Frutos do Mar,Lino Rodriguez,Sales Manager,Travessa das Flores, 41,Lisboa,NULL,1675-08,Portugal,(1) 354-2534,(1) 351-4411
-GALED,Galería del gastronómo,Eduardo Saavedra,Marketing Manager,Rambla de Cataluña, 23,Barcelona,NULL,08022,Spain,(93) 203 4560,(93) 203 4561
-GODOS,Godos Cocina Típica,José Pedro Rodríguez,Sales Manager,C/ Romero, 33,Sevilla,NULL,41101,Spain,(95) 555 82 82,NULL
-GOURD,Gourmandise et cie,André Chevance,Sales Representative,32, avenue de l'Armée d'Italie,Paris,NULL,75013,France,01.46.72.20.10,01.46.72.20.11
-GREAL,Great Lakes Food Market,Howard Snyder,Marketing Manager,2732 Baker Blvd.,Eugene,OR,97401,USA,(503) 555-7555,NULL
-GROSR,Groselier,Mathilde Bouvier,Marketing Manager,58, rue du Festin,Montréal,QC,H2S 2G6,Canada,(514) 555-6629,(514) 555-7545
-HANAR,Hanari Carnes,Mario Pontes,Marketing Representative,Rua do Paço, 67,Rio de Janeiro,RJ,05435-970,Brazil,(21) 555-0091,(21) 555-8765
-HILAA,HILARION-Abastos,Carlos Hernández,Sales Representative,Carrera 22 con Ave. Carlos Soublette #8-35,San Cristóbal,Táchira,5020,Venezuela,(5) 555-1340,(5) 555-1903
-HUNGC,Hungry Coyote Import Store,Yoshi Latimer,Sales Representative,City Center Plaza 516 - 5th Ave.,Elgin,OR,97827,USA,(503) 555-6874,(503) 555-2376
-HUNGO,Hungry Owl All-Night Grocers,Patricia McKenna,Sales Associate,8 Johnstown Road,Cork,Co. Cork,NULL,NULL,Ireland,2967 5102,2967 3333
-ISLAT,Island Trading,Helen Bennett,Marketing Manager,Garden House Crowther Way,Cowes,Isle of Wight,PO31 7PJ,UK,(098) 512-8000,NULL
-KOENE,Königlich Essen,Philip Cramer,Sales Associate,Maubelstr. 90,Brandenburg,NULL,14776,Germany,0555-09876,NULL
-LAUGB,Laughing Bacchus Wine Cellars,Yoshi Tannamuri,Sales Manager,1900 Oak St.,Vancouver,BC,T3Z 1Y9,Canada,(604) 555-3392,(604) 555-7293
-LAZYK,Lazy K Kountry Store,John Steel,Sales Representative,12 Orchestra Terrace,Walla Walla,WA,99362,USA,(509) 555-7969,(509) 555-6221
-LEHMS,Lehmanns Marktstand,Renate Messner,Sales Representative,Magazinplatz 7,Frankfurt a.M.,NULL,60528,Germany,069-0245984,069-0245874
-LETSS,Let's Stop N Shop,Jaime Yorres,Owner,87 Polk St.,San Francisco,CA,94117,USA,(415) 555-5938,NULL
-LILAS,LILA-Supermercado,Carlos González,Owner,Carrera 52 con Calle 65,Bogotá,NULL,NULL,Colombia,(1) 987-5992,NULL
-LINOD,LINO-Delicateses,Felipe Izquierdo,Owner,Yuta 3051,Buenos Aires,NULL,1654,Argentina,(1) 338-1883,NULL
-LONEP,Lonesome Pine Restaurant,Fran Wilson,Sales Manager,89 Chiaroscuro Rd.,Portland,OR,97219,USA,(503) 555-9597,NULL
-MAGAA,Magazzini Alimentari Riuniti,Giovanni Rovelli,Marketing Manager,Via Ludovico il Moro 22,Bergamo,NULL,24100,Italy,035-640230,035-649586
-MAISD,Maison Dewey,Catherine Dewey,Sales Agent,Rue de l'Abbaye 24,Reims,NULL,51100,France,26.47.15.10,NULL
-MEREP,Mère Paillarde,Jean-Paul Monnier,Sales Manager,43 rue St. Laurent,Montréal,QC,H2Y 1V3,Canada,(514) 555-8054,(514) 555-8055
-MORGK,Morgenstern Gesundkost,Alexander Feuer,Marketing Assistant,Heerstr. 22,Leipzig,NULL,04179,Germany,0342-023176,NULL
-NORTH,North/South,Simon Crowther,Sales Associate,South House 300 Queensbridge,London,NULL,SW7 1BY,UK,(020) 7555-7733,(020) 7555-2530
-NORTS,Northwind Traders,Simon Crowther,Sales Representative,7 City Center Plaza,Elgin,OR,97820,USA,(503) 555-1874,(503) 555-1945
-OCEAN,Océano Atlántico Ltda.,Yvonne Moncada,Sales Agent,Ing. Gustavo Moncada 8585 Piso 20-A,Buenos Aires,NULL,1010,Argentina,(1) 135-5555,(1) 135-4892
-OLDWO,Old World Delicatessen,Rene Phillips,Sales Representative,2743 Bering St.,Anchorage,AK,99508,USA,(907) 555-7584,(907) 555-2880
-OTTIK,Ottilies Käseladen,Henriette Pfalzheim,Owner,Mehrheimerstr. 369,Köln,NULL,50739,Germany,0221-0444098,0221-0444688
-PERIC,Pericles Comidas clásicas,Guillermo Fernández,Sales Representative,Calle Dr. Jorge Aguilar Mora 24,México D.F.,NULL,05021,Mexico,(5) 552-3782,(5) 545-3752
-PICCO,Piccolo und mehr,Georg Franz,Sales Manager,Geislweg 14,Salzburg,NULL,5020,Austria,6562-9772,6562-9773
-PRINI,Princesa Isabel Vda. de Portugal,Isabel de Portugal,Sales Representative,Estrada da saúde n. 58,Lisboa,NULL,1756-90,Portugal,(1) 354-2534,NULL
-QUEDE,Que Delícia,Bernardo Batista,Assistant Sales Agent,Rua da Bandeira 35,Rio de Janeiro,RJ,04532-000,Brazil,(21) 555-4252,(21) 555-9129
-QUEEN,Queen Cozinha,Lucía Carvalho,Order Administrator,Alameda dos Canàrios, 891,São Paulo,SP,05487-020,Brazil,(11) 555-1189,NULL
-QUICK,QUICK-Stop,Horst Kloss,Accounting Manager,Taucherstraße 10,Cunewalde,NULL,01307,Germany,0373-031024,NULL
-RANCH,Rancho grande,Sergio Gutiérrez,Sales Representative,Av. del Libertador 900,Buenos Aires,NULL,1010,Argentina,(1) 123-5555,(1) 123-5555
-RATTC,Rattlesnake Canyon Grocery,Paula Wilson,Assistant Sales Representative,2817 Milton Dr.,Albuquerque,NM,87110,USA,(505) 555-5939,(505) 555-3620
-REGGC,Reggiani Caseifici,Maurizio Moroni,Sales Associate,Strada Provinciale 124,Reggio Emilia,NULL,42100,Italy,0522-5886,0522-5886
-RICAR,Ricardo Adocicados,Janete Limeira,Assistant Sales Agent,Av. Copacabana, 267,Rio de Janeiro,RJ,02202-011,Brazil,(21) 555-3412,NULL
-RICSU,Richter Supermarkt,Michael Holz,Accounting Manager,Goldschmidstr. 22,Genève,NULL,1205,Switzerland,031-9876543,031-9876543
-ROMEY,Romero y tomillo,Andrés Picasso,Sales Representative,Bolivar #969,Trujillo,NULL,21502,Peru,(044) 203236,NULL
+CustomerID,CompanyName,ContactName,ContactTitle,Address,City,Region,PostalCode,Countries_code,Phone,Fax,SORTORDER
+ALFKI,Alfreds Futterkiste,Maria Anders,Sales Representative,Obere Str. 57,Berlin,NULL,12209,DE,030-0074321,030-0076545,1
+ANATR,Ana Trujillo Emparedados y helados,Ana Trujillo,Owner,Avda. de la Constitución 2222,México D.F.,NULL,05021,MX,(5) 555-4729,(5) 555-3745,2
+ANTON,Antonio Moreno Taquería,Antonio Moreno,Owner,Mataderos 2312,México D.F.,NULL,05023,MX,(5) 555-3932,NULL,3
+AROUT,Around the Horn,Thomas Hardy,Sales Representative,120 Hanover Sq.,London,NULL,WA1 1DP,GB,(020) 7555-7788,(020) 7555-6750,4
+BERGS,Berglunds snabbköp,Christina Berglund,Order Administrator,Berguvsvägen 8,Luleå,NULL,S-958 22,SE,0921-12 34 65,0921-12 34 67,5
+BLONP,Blondel père et fils,Frédérique Citeaux,Marketing Manager,24, place Kléber,Strasbourg,NULL,67000,FR,88.60.15.31 88.60.15.32,6
+BOLID,Bólido Comidas preparadas,Martín Sommer,Owner,C/ Araquil, 67,Madrid,NULL,28023,ES,"(91) 555 22 82,(91) 555 91 99",7
+BONAP,Bon app',Laurence Lebihan,Owner,12, rue des Bouchers,Marseille,NULL,13008,FR,"91.24.45.40,91.24.45.41",8
+BOTTM,Bottom-Dollar Markets,Elizabeth Lincoln,Accounting Manager,23 Tsawassen Blvd.,Tsawassen,BC,T2F 8A4,CA,(604) 555-4729,(604) 555-3745,9
+BSBEV,B's Beverages,Victoria Ashworth,Sales Representative,Fauntleroy Circus,London,NULL,EC2 5NT,GB,(020) 7555-1212,NULL,10
+CACTU,Cactus Comidas para llevar,Patricio Simpson,Sales Agent,Cerrito 333,Buenos Aires,NULL,1010,AR,(1) 135-5555,(1) 135-4892,11
+CENTC,Centro comercial Moctezuma,Francisco Chang,Marketing Manager,Sierras de Granada 9993,México D.F.,NULL,05022,MX,(5) 555-3392,(5) 555-7293,12
+CHOPS,Chop-suey Chinese,Yang Wang,Owner,Hauptstr. 29,Bern,NULL,3012,CH,0452-076545,NULL,13
+COMMI,Comércio Mineiro,Pedro Afonso,Sales Associate,Av. dos Lusíadas, 23,São Paulo SP,05432-043,BR,(11) 555-7647,NULL,13
+CONSH,Consolidated Holdings,Elizabeth Brown,Sales Representative,Berkeley Gardens 12 Brewery,London,NULL,WX1 6LT,GB,(020) 7555-2282,NULL,14
+DRACD,Drachenblut Delikatessen,Sven Ottlieb,Order Administrator,Walserweg 21,Aachen,NULL,52066,DE,0241-039123,0241-039122,15
+DUMON,Du monde entier,Janine Labrune,Owner,67, rue des Cinquante Otages Nantes,NULL,44000,FR,40.67.88.88,40.67.89.89,16
+EASTC,Eastern Connection,Ann Devon,Sales Agent,35 King St.,London,NULL,EC2 4LQ,GB,(020) 7555-0297,(020) 7555-9129,17
+ERNSH,Ernst Handel,Roland Mendel,Sales Manager,Kirchgasse 6,Graz,NULL,8010,AT,7675-3425,7675-3426,18
+FAMIA,Familia Arquibaldo,Aria Cruz,Marketing Assistant,Rua Orós, 92,"São Paulo,SP",05442-030,BR,(11) 555-9857,NULL,19
+FISSA,Fissa Fabrikationen AG,Diego Roel,Marketing Manager,Kappelergasse 16,Bern,NULL,3011,CH,061-995-0275,061-995-0275,20
+FOLIG,Folies gourmandes,Martine Rancé,Assistant Sales Agent,184, "chaussée de Tournai,Lille",59000,FR,20.16.10.16,20.16.10.17,21
+FOLKO,Folk och fä,Maria Larsson,Owner,Åkergatan 24,Bräcke,NULL,S-844 67,SE,0695-346721,NULL,22
+FRANK,Frankenversand,Peter Franken,Marketing Manager,Berliner Platz 43,München,NULL,80805,DE,089-877510,089-877451,23
+FRANR,FR restauration,Carine Schmitt,Marketing Manager,"54,rue Royale",Nantes,NULL,44000,FR,40.32.21.21,40.32.21.22,24
+FRANS,Franchi S.p.A.,Paolo Accorti,Sales Representative,Via Monte Bianco 34,Torino,NULL,10100,IT,011-4988260,011-4988261,26
+FURIB,Furia Bacalhau e Frutos do Mar,Lino Rodriguez,Sales Manager,"Travessa das Flores, 41",Lisboa,NULL,1675-08,PT,(1) 354-2534,(1) 351-4411,27
+GALED,Galería del gastronómo,Eduardo Saavedra,Marketing Manager,"Rambla de Cataluña, 23",Barcelona,NULL,08022,ES,(93) 203 4560,(93) 203 4561,28
+GODOS,Godos Cocina Típica,José Pedro Rodríguez,Sales Manager,"C/ Romero, 33",Sevilla,NULL,41101,ES,(95) 555 82 82,NULL,29
+GOURD,Gourmandise et cie,André Chevance,Sales Representative,"32, avenue de l'Armée d'Italie",Paris,NULL,75013,FR,01.46.72.20.10,01.46.72.20.11,30
+GREAL,Great Lakes Food Market,Howard Snyder,Marketing Manager,2732 Baker Blvd.,Eugene,OR,97401,US,(503) 555-7555,NULL,31
+GROSR,Groselier,Mathilde Bouvier,Marketing Manager,"58, rue du Festin",Montréal,QC,H2S 2G6,CA,(514) 555-6629,(514) 555-7545,32
+HANAR,Hanari Carnes,Mario Pontes,Marketing Representative,"Rua do Paço, 67",Rio de Janeiro,RJ,05435-970,BR,(21) 555-0091,(21) 555-8765,33
+HILAA,HILARION-Abastos,Carlos Hernández,Sales Representative,Carrera 22 con Ave. Carlos Soublette #8-35,San Cristóbal,Táchira,5020,VE,(5) 555-1340,(5) 555-1903,34
+HUNGC,Hungry Coyote Import Store,Yoshi Latimer,Sales Representative,City Center Plaza 516 - 5th Ave.,Elgin,OR,97827,US,(503) 555-6874,(503) 555-2376,35
+HUNGO,Hungry Owl All-Night Grocers,Patricia McKenna,Sales Associate,8 Johnstown Road,Cork,Co. Cork,NULL,IE,2967 5102,2967 3333,36
+ISLAT,Island Trading,Helen Bennett,Marketing Manager,Garden House Crowther Way,Cowes,Isle of Wight,PO31 7PJ,GB,(098) 512-8000,NULL,37
+KOENE,Königlich Essen,Philip Cramer,Sales Associate,Maubelstr. 90,Brandenburg,NULL,14776,DE,0555-09876,NULL,38
+LAUGB,Laughing Bacchus Wine Cellars,Yoshi Tannamuri,Sales Manager,1900 Oak St.,Vancouver,BC,T3Z 1Y9,CA,(604) 555-3392,(604) 555-7293,39
+LAZYK,Lazy K Kountry Store,John Steel,Sales Representative,12 Orchestra Terrace,Walla Walla,WA,99362,US,(509) 555-7969,(509) 555-6221,40
+LEHMS,Lehmanns Marktstand,Renate Messner,Sales Representative,Magazinplatz 7,Frankfurt a.M.,NULL,60528,DE,069-0245984,069-0245874,41
+LETSS,Let's Stop N Shop,Jaime Yorres,Owner,87 Polk St.,San Francisco,CA,94117,US,(415) 555-5938,NULL,42
+LILAS,LILA-Supermercado,Carlos González,Owner,Carrera 52 con Calle 65,Bogotá,NULL,NULL,CO,(1) 987-5992,NULL,43
+LINOD,LINO-Delicateses,Felipe Izquierdo,Owner,Yuta 3051,Buenos Aires,NULL,1654,AR,(1) 338-1883,NULL,44
+LONEP,Lonesome Pine Restaurant,Fran Wilson,Sales Manager,89 Chiaroscuro Rd.,Portland,OR,97219,US,(503) 555-9597,NULL,45
+MAGAA,Magazzini Alimentari Riuniti,Giovanni Rovelli,Marketing Manager,Via Ludovico il Moro 22,Bergamo,NULL,24100,IT,035-640230,035-649586,46
+MAISD,Maison Dewey,Catherine Dewey,Sales Agent,Rue de l'Abbaye 24,Reims,NULL,51100,FR,26.47.15.10,NULL,47
+MEREP,Mère Paillarde,Jean-Paul Monnier,Sales Manager,43 rue St. Laurent,Montréal,QC,H2Y 1V3,CA,(514) 555-8054,(514) 555-8055,48
+MORGK,Morgenstern Gesundkost,Alexander Feuer,Marketing Assistant,Heerstr. 22,Leipzig,NULL,04179,DE,0342-023176,NULL,49
+NORTH,North/South,Simon Crowther,Sales Associate,South House 300 Queensbridge,London,NULL,SW7 1BY,GB,(020) 7555-7733,(020) 7555-2530,50
+NORTS,Northwind Traders,Simon Crowther,Sales Representative,7 City Center Plaza,Elgin,OR,97820,US,(503) 555-1874,(503) 555-1945,51
+OCEAN,Océano Atlántico Ltda.,Yvonne Moncada,Sales Agent,Ing. Gustavo Moncada 8585 Piso 20-A,Buenos Aires,NULL,1010,AR,(1) 135-5555,(1) 135-4892,52
+OLDWO,Old World Delicatessen,Rene Phillips,Sales Representative,2743 Bering St.,Anchorage,AK,99508,US,(907) 555-7584,(907) 555-2880,53
+OTTIK,Ottilies Käseladen,Henriette Pfalzheim,Owner,Mehrheimerstr. 369,Köln,NULL,50739,DE,0221-0444098,0221-0444688,54
+PERIC,Pericles Comidas clásicas,Guillermo Fernández,Sales Representative,Calle Dr. Jorge Aguilar Mora 24,México D.F.,NULL,05021,MX,(5) 552-3782,(5) 545-3752,55
+PICCO,Piccolo und mehr,Georg Franz,Sales Manager,Geislweg 14,Salzburg,NULL,5020,AT,6562-9772,6562-9773,56
+PRINI,Princesa Isabel Vda. de PT,Isabel de PT,Sales Representative,Estrada da saúde n. 58,Lisboa,NULL,1756-90,PT,(1) 354-2534,NULL,57
+QUEDE,Que Delícia,Bernardo Batista,Assistant Sales Agent,Rua da Bandeira 35,Rio de Janeiro,RJ,04532-000,BR,(21) 555-4252,(21) 555-9129,58
+QUEEN,Queen Cozinha,Lucía Carvalho,Order Administrator,"Alameda dos Canàrios, 891",São Paulo,SP,05487-020,BR,(11) 555-1189,NULL,59
+QUICK,QUICK-Stop,Horst Kloss,Accounting Manager,Taucherstraße 10,Cunewalde,NULL,01307,DE,0373-031024,NULL,60
+RANCH,Rancho grande,Sergio Gutiérrez,Sales Representative,Av. del Libertador 900,Buenos Aires,NULL,1010,AR,(1) 123-5555,(1) 123-5555,61
+RATTC,Rattlesnake Canyon Grocery,Paula Wilson,Assistant Sales Representative,2817 Milton Dr.,Albuquerque,NM,87110,US,(505) 555-5939,(505) 555-3620,62
+REGGC,Reggiani Caseifici,Maurizio Moroni,Sales Associate,Strada Provinciale 124,Reggio Emilia,NULL,42100,IT,0522-5886,0522-5886,63
+RICAR,Ricardo Adocicados,Janete Limeira,Assistant Sales Agent,"Av. Copacabana, 267",Rio de Janeiro,RJ,02202-011,BR,(21) 555-3412,NULL,64
+RICSU,Richter Supermarkt,Michael Holz,Accounting Manager,Goldschmidstr. 22,Genève,NULL,1205,CH,031-9876543,031-9876543,65
+ROMEY,Romero y tomillo,Andrés Picasso,Sales Representative,Bolivar #969,Trujillo,NULL,21502,PE,(044) 203236,NULL,66
